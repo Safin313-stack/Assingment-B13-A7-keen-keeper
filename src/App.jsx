@@ -1,12 +1,16 @@
+import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import LoadingSkeleton from './components/LoadingSkeleton';
 import Home from './pages/Home';
-import FriendDetails from './pages/FriendDetails';
-import Timeline from './pages/Timeline';
-import Stats from './pages/Stats';
-import NotFound from './pages/NotFound';
+
+// Lazy load pages for better performance
+const FriendDetails = lazy(() => import('./pages/FriendDetails'));
+const Timeline = lazy(() => import('./pages/Timeline'));
+const Stats = lazy(() => import('./pages/Stats'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 export default function App() {
   return (
@@ -14,13 +18,15 @@ export default function App() {
       <Toaster position="top-right" />
       <Navbar />
       <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/friend/:id" element={<FriendDetails />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<LoadingSkeleton />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/friend/:id" element={<FriendDetails />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/stats" element={<Stats />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </main>
       <Footer />
     </div>
