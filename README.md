@@ -99,6 +99,6 @@ This project is open source and available under the MIT License.
 
 ## 👤 Author
 
-**Safin313-stack**
+### Safin313-stack
 
 [GitHub: Safin313-stack](https://github.com/Safin313-stack)
