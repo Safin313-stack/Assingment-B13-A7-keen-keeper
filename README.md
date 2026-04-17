@@ -20,6 +20,7 @@
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 16+ and npm
 
 ### Installation
@@ -45,11 +46,13 @@ npm run preview
 ## 📦 Deployment
 
 ### GitHub Pages (Automatic)
+
 This project is automatically deployed to GitHub Pages on every push to the `main` branch via GitHub Actions.
 
-**Live URL:** https://Safin313-stack.github.io/Assingment-B13-A7-keen-keeper/
+**Live URL:** [GitHub Pages Deployment](https://Safin313-stack.github.io/Assingment-B13-A7-keen-keeper/)
 
 The app uses:
+
 - Vite for optimized builds
 - React Router for SPA routing
 - GitHub Actions workflow for automated deployment
@@ -65,7 +68,7 @@ npm run build
 
 ## 📂 Project Structure
 
-```
+```text
 src/
 ├── components/      # Reusable React components
 │   ├── ErrorBoundary.jsx
@@ -96,5 +99,6 @@ This project is open source and available under the MIT License.
 
 ## 👤 Author
 
-**Safin313-stack**  
-GitHub: https://github.com/Safin313-stack
+**Safin313-stack**
+
+[GitHub: Safin313-stack](https://github.com/Safin313-stack)
