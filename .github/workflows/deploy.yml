@@ -4,6 +4,15 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -23,9 +32,25 @@ jobs:
       - name: Build project
         run: npm run build
       
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+      - name: Copy docs to root for GitHub Pages
+        run: |
+          cp docs/index.html .
+          cp -r docs/assets .
+          cp docs/*.css . 2>/dev/null || true
+          cp docs/*.js . 2>/dev/null || true
+          cp docs/favicon.svg .
+          cp docs/friends.json .
+          cp docs/icons.svg .
+          cp docs/404.html .
+          cp docs/.nojekyll .
+      
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add index.html assets favicon.svg friends.json icons.svg 404.html .nojekyll
+          git diff --cached --quiet || git commit -m "Deploy: Update built app files"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # Build date: Fri Apr 17 10:58:48 PM +06 2026
