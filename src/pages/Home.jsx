@@ -2,11 +2,19 @@ import { useState, useEffect } from 'react';
 import { UserPlus, Users, AlertCircle, Clock, CheckCircle } from 'lucide-react';
 import FriendCard from '../components/FriendCard';
 import LoadingSkeleton from '../components/LoadingSkeleton';
+import updateDocumentMeta from '../utils/metaTags';
 import toast from 'react-hot-toast';
 
 export default function Home() {
   const [friends, setFriends] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    updateDocumentMeta(
+      'Dashboard',
+      'Track your friendships and interactions in one place'
+    );
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
