@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arjun Mehta",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Arjun&backgroundColor=b6e3f4",
+    "email": "arjun.mehta@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We met in the first week of university and became close real fast. He is a backend dev in Bangalore now and we still talk whenever we can.",
+    "goal": 14,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 2,
+    "name": "Nadia Rahman",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Nadia&backgroundColor=ffd5dc",
+    "email": "nadia.rahman@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "She was my team lead at my first internship. Taught me a lot about writing clean code. We do virtual coffee catch-ups every month.",
+    "goal": 30,
+    "next_due_date": "2026-05-05"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hossain",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Tanvir&backgroundColor=c0aede",
+    "email": "tanvir.h@yahoo.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["childhood", "neighbor"],
+    "bio": "Known him since we were 8. We used to race bikes in our street. He's doing civil engineering now and we catch up whenever I visit home.",
+    "goal": 14,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 4,
+    "name": "Priya Kapoor",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Priya&backgroundColor=d1f4e0",
+    "email": "priya.kapoor@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["college", "project partner"],
+    "bio": "We built our final year project together. She is doing her Masters in Canada now. Super resourceful person.",
+    "goal": 21,
+    "next_due_date": "2026-04-30"
+  },
+  {
+    "id": 5,
+    "name": "Rafi Uddin",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Rafi&backgroundColor=ffdfbf",
+    "email": "rafi.uddin@proton.me",
+    "days_since_contact": 24,
+    "status": "overdue",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through a CP Discord server. We've done dozens of online contests together. Really good at DP problems.",
+    "goal": 14,
+    "next_due_date": "2026-03-20"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Islam",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Sadia&backgroundColor=f0c7e8",
+    "email": "sadia.islam88@gmail.com",
+    "days_since_contact": 8,
+    "status": "almost due",
+    "tags": ["family friend", "book club"],
+    "bio": "Family friend who became a book club partner. We have totally different tastes in books which makes the conversations really fun.",
+    "goal": 10,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Leo Fernandes",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Leo&backgroundColor=bee3f8",
+    "email": "leo.fernandes@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["hackathon", "startup"],
+    "bio": "Met at a 48h hackathon in Dhaka. We built a waste management app and got 3rd place. He keeps pushing me to co-found something.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 8,
+    "name": "Meghna Das",
+    "picture": "https://api.dicebear.com/9.x/personas/svg?seed=Meghna&backgroundColor=fde9c7",
+    "email": "meghna.das@hotmail.com",
+    "days_since_contact": 31,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "Best friend from high school. We drifted after she moved to Chittagong but every time we talk it feels like nothing has changed.",
+    "goal": 21,
+    "next_due_date": "2026-03-10"
+  }
+]
