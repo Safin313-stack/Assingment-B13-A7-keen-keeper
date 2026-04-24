@@ -53,3 +53,4 @@ export default function FriendCard({ friend }) {
     </div>
   );
 }
+
