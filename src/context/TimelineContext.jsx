@@ -26,3 +26,4 @@ export function TimelineProvider({ children }) {
 export function useTimeline() {
   return useContext(TimelineContext);
 }
+
