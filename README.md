@@ -20,3 +20,4 @@ Live site: https://mellow-daffodil-fe2ee4.netlify.app/
 ## Run locally
 npm install
 npm run dev
+
